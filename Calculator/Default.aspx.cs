@@ -18,11 +18,11 @@ public partial class _Default : System.Web.UI.Page
     {
         if(IsPostBack)
         {
+
             operation = Request.Form["Operation"];
             number2 = double.Parse(Request.Form["number2"]);
             number1 = double.Parse(Request.Form["number1"]);
 
-            
 
             switch(operation)
             {
@@ -52,7 +52,7 @@ public partial class _Default : System.Web.UI.Page
 
             Equation = $"{number1} {operation} {number2} = {Calculation}";
 
-
+            
 
         }
     }

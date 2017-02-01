@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="app.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div class="container">
@@ -12,7 +13,7 @@
         
         <form id="form1" runat="server">
             <div class="form-group">
-                <input type="number" class="form-control"  name="number1" step="any" />
+                <input type="number" class="form-control"  name="number1" step="any" value="<%=Calculation %>" />
 
                 <select name="Operation">
                     <option>---</option>
@@ -22,7 +23,7 @@
                     <option>x</option>
                 </select>
 
-                <input type="number" class="form-control" name="number2" step="any" />
+                <input type="number" class="form-control" name="number2" step="any" value="0"/>
 
                 
 
@@ -34,6 +35,7 @@
                     <h2><%= message %></h2>
                     <h2><%= Equation %></h2>
                     <h2><%= Calculation %></h2>
+                    <% %>
                 </div>
             </div>
         </form>
